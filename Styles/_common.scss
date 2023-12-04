@@ -1,0 +1,243 @@
+$rounded-bottom: 0px 0px 12px 12px;
+$grey1: #cacadb;
+$grey2: #e7e7f2;
+$grey-bg: #f5f5fa;
+$accent: #f0145a;
+$active-regular: #24a3ff;
+$main-regular: #323264;
+$grey-text: #b3b3ba;
+$md: 768px;
+$sm: 576px;
+$txt30px: 30px;
+$txt19px: 19px;
+$txt14px: 14px;
+
+body {
+  font-family: Montserrat;
+}
+.txt_bold {
+  font-weight: 700;
+}
+.txt_normal {
+  font-weight: 400;
+}
+.txt_14px {
+  font-size: 14px;
+}
+.txt_uppercase {
+  text-transform: uppercase;
+}
+.txt_line-height26 {
+  line-height: 26px;
+}
+.carousel-item_h2-30px {
+  font-size: $txt30px;
+}
+.carousel-item_text-txt19px {
+  font-size: 19px;
+}
+
+a.link {
+  text-decoration: none;
+}
+.nav-link-h {
+  color: blue;
+  @media screen and (min-width: $sm) {
+    color: white;
+  }
+}
+.section-gradient {
+  min-height: 100vh;
+  background: var(
+    --gradient-supersoft,
+    linear-gradient(229deg, #323264 11.93%, #323264 57.17%, #643e72 87.46%)
+  );
+  border-radius: $rounded-bottom;
+  position: relative;
+  &__shadow {
+    height: 10px;
+    position: absolute;
+    width: 100%;
+    border-radius: $rounded-bottom;
+    &--1 {
+      bottom: -10px;
+      width: calc(100% - 40px);
+      left: 20px;
+      background-color: $grey1;
+    }
+    &--2 {
+      bottom: -20px;
+      width: calc(100% - 80px);
+      left: 40px;
+      background-color: $grey2;
+    }
+  }
+}
+.main-wrap {
+  position: relative;
+  min-height: 100vh;
+  &-bg {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+    &__h {
+      height: 100%;
+    }
+  }
+  &__section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    position: relative;
+    z-index: 100;
+  }
+  &__title {
+    padding: 0 30px;
+    font-size: 38px;
+    line-height: 46.32px;
+  }
+}
+.header-grid {
+  display: grid;
+  grid-template-areas: "info" "logo" "nav";
+  color: white;
+  row-gap: 18px;
+  @media screen and (min-width: $md) {
+    grid-template-areas: "logo info" "logo nav";
+  }
+  &__logo {
+    grid-area: logo;
+  }
+  &__info {
+    grid-area: info;
+  }
+  &__nav {
+    grid-area: nav;
+  }
+}
+.btn {
+  &-sm {
+    background-color: transparent;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    &.active,
+    &:hover {
+      background-color: red;
+    }
+  }
+}
+.navbar-toggler.hlegal-toggler {
+  border: none;
+}
+.adress-item {
+  display: flex;
+  align-items: center;
+  &:before {
+    content: "";
+    position: relative;
+    height: 6px;
+    width: 6px;
+    background-color: $grey1;
+    border-radius: 50%;
+    display: inline-block;
+    right: 6px;
+  }
+}
+.offcanvas {
+  border-radius: 8px 8px 0 0;
+}
+.btn-circle {
+  background-color: transparent;
+  color: white;
+  width: 42px;
+  height: 42px;
+  display: inline-block;
+  border: 1px solid $grey1;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  &__icon {
+    font-size: 30px;
+  }
+}
+.icon-wrap {
+  width: 92px;
+  padding: 14px;
+  background-color: white;
+  border-radius: 24px;
+  &_mb30 {
+    margin-bottom: 30px;
+  }
+}
+.title_color,
+.services__link_color,
+.arrow-right,
+.publications__link_color,
+.h4.publications-row__title {
+  color: $active-regular;
+}
+.title_gradient {
+  background: var(
+    --gradient-text-red,
+    linear-gradient(90deg, #f0145a 0.84%, #ef8080 99.96%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.h1.title_mb60 {
+  margin-bottom: 60px;
+}
+.services__link,
+.publications__link {
+  text-decoration: none;
+  letter-spacing: 1px;
+  &:hover {
+    color: #f0145a;
+  }
+}
+
+.services_pt_pb {
+  padding: 60px 0;
+}
+
+.row__logo {
+  width: 100%;
+}
+.section-logos_pt_pb {
+  padding: 60px 0;
+}
+
+.section-logos__title {
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 17.07px;
+  letter-spacing: 1px;
+  &_color {
+    color: $main-regular;
+  }
+}
+
+.publications_background {
+  background-color: $grey-bg;
+}
+.h1.title_mb30 {
+  margin-bottom: 30px;
+}
+
+.publications-row__img {
+  max-width: 100%;
+}
+.publications-row {
+  &__card {
+    background-color: white;
+  }
+}
