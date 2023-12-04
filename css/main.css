@@ -52,7 +52,7 @@ table {
   box-sizing: border-box;
 }
 
-body {
+* {
   font-family: Montserrat;
 }
 
@@ -240,6 +240,12 @@ a.link {
   color: #24a3ff;
 }
 
+.services__link,
+.publications__link {
+  display: flex;
+  align-items: center;
+}
+
 .title_gradient {
   background: var(--gradient-text-red, linear-gradient(90deg, #f0145a 0.84%, #ef8080 99.96%));
   background-clip: text;
@@ -263,6 +269,11 @@ a.link {
 
 .services_pt_pb {
   padding: 60px 0;
+}
+
+.row.rounded-row {
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .row__logo {
@@ -293,7 +304,7 @@ a.link {
 }
 
 .publications-row__img {
-  max-width: 100%;
+  width: 100%;
 }
 
 .publications-row__card {
@@ -306,10 +317,18 @@ a.link {
   background-color: #e6e6f0;
 }
 .grey-line_m {
-  margin: 30px 0;
+  margin-top: 30px;
 }
 
 /*footer*/
+.footer_background {
+  background-color: #f5f5fa;
+}
+
+.footer_p {
+  padding: 30px 0;
+}
+
 .carousel-indicators.carousel-indicators-h {
   position: relative;
   margin: 0;
