@@ -33,14 +33,8 @@
         </div>
         <div class="main-wrap__section">
           <header class="main-wrap__header">
-            <!--
-              <div class="header-grid">
-                <div class="header-grid__logo">Logo</div>
-                <div class="header-grid__info">Info info info</div>
-                <div class="header-grid__nav">Navigation</div>
-              </div> -->
             <nav class="navbar navbar-dark navbar-expand-sm">
-              <div class="container">
+              <div class="container-lg container-paddings">
                 <div class="header-grid w-100">
                   <div class="header-grid__logo d-flex justify-content-between">
                     <a class="navbar-brand" href="#"
@@ -102,7 +96,7 @@
                             <a class="link nav-link-h" href="">about us</a>
                           </li>
                           <li>
-                            <a class="link nav-link-h" href="">services</a>
+                            <a class="link nav-link-h" href="./Pages/services.html">services</a>
                           </li>
                           <li><a class="link nav-link-h" href="">team</a></li>
                           <li>
@@ -127,14 +121,18 @@
             </div>
           </div>
           <div class="main-wrap__button-scroll d-flex justify-content-center">
-            <button class="btn-circle">
-              <span class="material-icons btn-circle__icon"> expand_more </span>
-            </button>
+            <a href="#services" class="btn-link-decoration-none"
+              ><button class="btn-circle">
+                <span class="material-icons btn-circle__icon">
+                  expand_more
+                </span>
+              </button></a
+            >
           </div>
         </div>
       </main>
       <section class="carousel-sliders carousel-sliders_pt60">
-        <div class="container-lg">
+        <div class="container-lg container-carousel">
           <div id="carouselExampleIndicators" class="carousel slide d-grid">
             <div class="carousel-indicators carousel-indicators-h">
               <div class="carousel-indicators__btn">
@@ -174,7 +172,7 @@
                 </button>
               </div>
             </div>
-            <div class="carousel-inner text-light">
+            <div class="carousel-inner text-light carousel-inner-container">
               <div class="carousel-item active text-start">
                 <h2 class="carousel-item_h2-30px pt-0 pb-5">
                   We turn the idea of legal services
@@ -222,21 +220,21 @@
           </div>
         </div>
       </section>
+
+      <!--section Services-->
+
       <section id="services" class="services services_pt_pb">
-        <div class="container-lg">
-          <a
-            class="services__link services__link_color txt_14px txt_uppercase"
-            href=""
-          >
+        <div class="container-lg container-paddings">
+          <a class="section-link services__link txt_14px txt_uppercase" href="./Pages/services.html">
             Services
             <span class="material-icons arrow-right txt_14px"
               >keyboard_arrow_right</span
             ></a
           >
-          <h2 class="h1 services__title title_gradient title_mb60">
+          <h2 class="h1 h1-bold title_gradient title_mb60">
             What can we do better than others?
           </h2>
-          <div class="row">
+          <div class="row g-5">
             <div class="row-card col-12 col-sm-6 col-lg-4">
               <div class="icon-wrap icon-wrap_mb30">
                 <object
@@ -244,9 +242,9 @@
                   type=""
                 ></object>
               </div>
-              <h3 class="row-card__title title_color txt_bold">
+              <a class="row-card__title row-card__title_mb " href="./Pages/services_entry.html">
                 IT and e-commerce
-              </h3>
+              </a>
               <p
                 class="row-card__text text-light txt_regular txt_line-height26"
               >
@@ -262,9 +260,9 @@
                   type=""
                 ></object>
               </div>
-              <h3 class="row-card__title title_color txt_bold">
+              <a class="row-card__title row-card__title_mb" href="">
                 Comprehensive daily legal support
-              </h3>
+              </a>
               <p
                 class="row-card__text text-light txt_regular txt_line-height26"
               >
@@ -281,9 +279,9 @@
                   type=""
                 ></object>
               </div>
-              <h3 class="row-card__title title_color txt_bold">
+              <a class="row-card__title row-card__title_mb" href="">
                 Structuring corporate relationships
-              </h3>
+              </a>
               <p
                 class="row-card__text text-light txt_regular txt_line-height26"
               >
@@ -299,9 +297,9 @@
                   type=""
                 ></object>
               </div>
-              <h3 class="row-card__title title_color txt_bold">
+              <a class="row-card__title row-card__title_mb" href="">
                 Building contractual relations
-              </h3>
+              </a>
               <p
                 class="row-card__text text-light txt_regular txt_line-height26"
               >
@@ -318,9 +316,9 @@
                   type=""
                 ></object>
               </div>
-              <h3 class="row-card__title title_color txt_bold">
+              <a class="row-card__title row-card__title_mb" href="">
                 Protection of business, intellectual property
-              </h3>
+              </a>
               <p
                 class="row-card__text text-light txt_regular txt_line-height26"
               >
@@ -337,9 +335,9 @@
                   type=""
                 ></object>
               </div>
-              <h3 class="row-card__title title_color txt_bold">
+              <a class="row-card__title row-card__title_mb" href="">
                 Judicial representation
-              </h3>
+              </a>
               <p
                 class="row-card__text text-light txt_regular txt_line-height26"
               >
@@ -352,14 +350,49 @@
         </div>
       </section>
     </div>
+
+    <!--section Team-->
+
+    <section class="section-team section-team_p">
+      <div class="container-lg container-paddings">
+        <div class="row rounded-row team-row g-0">
+          <div class="col-12 col-md-5 col-lg-4">
+            <img
+              class="team-row__img"
+              src="./Assets/Images/Homepage/photo_1.svg"
+              alt=""
+            />
+          </div>
+          <div class="col-12 col-md-7 col-lg-8 text-col">
+            <div class="team-text-wrap text-col__content">
+              <a class="section-link txt_14px txt_uppercase" href="">
+                Команда
+                <span class="material-icons arrow-right txt_14px"
+                  >keyboard_arrow_right</span
+                ></a
+              >
+              <h2 class="h1 h1-bold title_gradient title_mb30">
+                Ми звикли брати на себе відповідальність та завжди гарантуємо
+                чесну, вчасну допомогу, навіть у ситуаціях, коли більшість
+                безсилі.
+              </h2>
+              <p class="team-name">Олександр Олександровський</p>
+              <p class="team-position">Керуючий партнер</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--section Logos-->
+
     <section class="section-logos section-logos_pt_pb">
-      <div class="container-lg">
+      <div class="container-lg container-no-padings">
         <h3
           class="section-logos__title section-logos__title_color txt_14px txt_bold"
         >
           They already trust us
         </h3>
-        <div class="row rounded-row g-0">
+        <div class="row rounded-row rounded-row-none-lg g-0">
           <div class="col-12 col-sm-4 col-lg-3 row__logo-wrap">
             <img
               src="./Assets/Images/Homepage/Hilell_logo.svg"
@@ -447,10 +480,12 @@
         </div>
       </div>
     </section>
-    <section class="publications publications_background">
-      <div class="container-lg">
+
+    <!--section Publications-->
+    <section class="publications publications_background publications_pt">
+      <div class="container-lg container-paddings">
         <a
-          class="publications__link publications__link_color txt_14px txt_uppercase"
+          class="section-link publications__link txt_14px txt_uppercase"
           href=""
         >
           publications
@@ -458,7 +493,9 @@
             >keyboard_arrow_right</span
           ></a
         >
-        <h2 class="h1 publications__title title_gradient title_mb30 txt_bold">
+        <h2
+          class="h1 h1-bold publications__title title_gradient title_mb30 txt_bold"
+        >
           We have something to tell
         </h2>
         <div class="row publications-row">
@@ -469,32 +506,34 @@
                 alt=""
                 class="publications-row__img"
               />
-              <div class="txt-wrap">
-                <h4 class="h4 publications-row__title">Equity associate</h4>
-                <p class="date">April 22</p>
+              <div class="txt-wrap publications-row__txt">
+                <h4 class="h4 publications-row__title mb-0">
+                  Equity associate
+                </h4>
+                <p class="publications-row__date mb-0">April 22</p>
                 <div class="border-line"></div>
-                <p class="txt-publication">
+                <p class="publications-row__content">
                   I'm a jun on projects. I am a co-owner of a law firm. How it
                   happened. Before entering my parents told me that if I…
                 </p>
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-4">
+          <div class="col-12 col-md-6 col-lg-4 column_pading-top-md">
             <div class="publications-row__card">
               <img
                 src="./Assets/Images/Homepage/gdpr.svg"
                 alt=""
                 class="publications-row__img"
               />
-              <div class="txt-wrap">
-                <h4 class="h4 publications-row__title">
+              <div class="txt-wrap publications-row__txt">
+                <h4 class="h4 publications-row__title mb-0">
                   Penalty for the Good Corporation: what will happen to Google
                   and others for violating the GDPR
                 </h4>
-                <p class="date">September 29</p>
+                <p class="publications-row__date mb-0">September 29</p>
                 <div class="border-line"></div>
-                <p class="txt-publication">
+                <p class="publications-row__content">
                   And why the recovery of 50 million euros could be a fateful
                   precedent According to Mind.ua January 21 National Commission
                   for Data Protection.
@@ -502,18 +541,20 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-12 col-lg-4">
+          <div class="col-12 col-md-12 col-lg-4 column_pading-top">
             <div class="publications-row__card">
               <img
                 src="./Assets/Images/Homepage/publications_img3.svg"
                 alt=""
                 class="publications-row__img"
               />
-              <div class="publications-row__txt-wrap">
-                <h4 class="h4 publications-row__title">Millennial Testament</h4>
-                <p class="date">August 19</p>
+              <div class="txt-wrap publications-row__txt">
+                <h4 class="h4 publications-row__title mb-0">
+                  Millennial Testament
+                </h4>
+                <p class="publications-row__date mb-0">August 19</p>
                 <div class="border-line"></div>
-                <p class="txt-publication">
+                <p class="publications-row__content">
                   What and how modern vloggers, opinion leaders and
                   crypto-millionaires will inherit A typical legacy of the
                   Ukrainian generation X looks like this: an apartment in…
@@ -523,29 +564,33 @@
           </div>
         </div>
       </div>
-      <div class="container">
+      <div class="container-lg container-paddings">
         <div class="grey-line grey-line_m"></div>
       </div>
     </section>
-    <footer class="footer footer_background footer_p">
-      <div class="container">
-        <address class="footer-address">
-          <p class="footer-address__item mb-0">Kyiv, Mechnikova str, 14/1</p>
-          <p class="footer-address__item mb-0">
-            <a href="" class="footer-address__link">On map</a>
-          </p>
-        </address>
-        <p class="footer_copyright">© 2021 HLEGAL Law company, LLC</p>
 
-        <div class="contacts">
-          <a href="" class="contacts__item"
-            ><object
+    <!--footer-->
+    <footer class="footer footer_background footer_p">
+      <div class="container-lg container-paddings flex-footer-container">
+        <div
+          class="footer-first-row d-flex align-items-center flex-wrap gap-3"
+        >
+          <address class="footer-address d-flex gap-3 align-items-center">
+            <p class="footer-address__item mb-0">Kyiv, Mechnikova str, 14/1</p>
+            <a href="" class="footer-address__link">On map</a>
+          </address>
+          <p class="footer-copyright">© 2021 HLEGAL Law company, LLC</p>
+        </div>
+
+        <div class="footer-contacts d-flex gap-3 align-items-center flex-wrap">
+          <a href="" class="footer-contacts__item footer-logo-link"
+            ><object class="footer-logo"
               data="./Assets/Images/Homepage/Facebook-Footer.svg"
               type=""
             ></object
           ></a>
-          <p class="contacts__item mb-0">0800 211 927</p>
-          <p class="contacts__item mb-0">contact@forstudy.space</p>
+          <p class="footer-contacts__item footer-tell-nmbr mb-0 d-flex align-items-center">0800 211 927</p>
+          <p class="footer-contacts__item footer-email mb-0 d-flex align-items-center"><a class="footer-email__link" href="">contact@forstudy.space</a></p>
         </div>
       </div>
     </footer>

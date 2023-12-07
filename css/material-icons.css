@@ -1,7 +1,11 @@
-/**
- * @deprecated As of 1.0, use .material-icons instead of .mi
- */
-.mi {
+@font-face {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("./material-icons.woff2") format("woff2"), url("./material-icons.woff") format("woff");
+}
+.material-icons {
   font-family: "Material Icons";
   font-weight: normal;
   font-style: normal;
@@ -19,10 +23,14 @@
   font-feature-settings: "liga";
 }
 
-/**
- * @deprecated As of 1.0, use .material-icons-outlined instead of .mi-outlined
- */
-.mi-outlined {
+@font-face {
+  font-family: "Material Icons Outlined";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("./material-icons-outlined.woff2") format("woff2"), url("./material-icons-outlined.woff") format("woff");
+}
+.material-icons-outlined {
   font-family: "Material Icons Outlined";
   font-weight: normal;
   font-style: normal;
@@ -40,10 +48,14 @@
   font-feature-settings: "liga";
 }
 
-/**
- * @deprecated As of 1.0, use .material-icons-round instead of .mi-round
- */
-.mi-round {
+@font-face {
+  font-family: "Material Icons Round";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("./material-icons-round.woff2") format("woff2"), url("./material-icons-round.woff") format("woff");
+}
+.material-icons-round {
   font-family: "Material Icons Round";
   font-weight: normal;
   font-style: normal;
@@ -61,10 +73,14 @@
   font-feature-settings: "liga";
 }
 
-/**
- * @deprecated As of 1.0, use .material-icons-sharp instead of .mi-sharp
- */
-.mi-sharp {
+@font-face {
+  font-family: "Material Icons Sharp";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("./material-icons-sharp.woff2") format("woff2"), url("./material-icons-sharp.woff") format("woff");
+}
+.material-icons-sharp {
   font-family: "Material Icons Sharp";
   font-weight: normal;
   font-style: normal;
@@ -82,10 +98,14 @@
   font-feature-settings: "liga";
 }
 
-/**
- * @deprecated As of 1.0, use .material-icons-two-tone instead of .mi-two-tone
- */
-.mi-two-tone {
+@font-face {
+  font-family: "Material Icons Two Tone";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("./material-icons-two-tone.woff2") format("woff2"), url("./material-icons-two-tone.woff") format("woff");
+}
+.material-icons-two-tone {
   font-family: "Material Icons Two Tone";
   font-weight: normal;
   font-style: normal;
@@ -101,82 +121,7 @@
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   font-feature-settings: "liga";
-}
-
-.mi-123::before {
-  content: "\eb8d";
-}
-
-.mi-360::before {
-  content: "\e577";
-}
-
-.mi-10k::before {
-  content: "\e951";
-}
-
-.mi-10mp::before {
-  content: "\e952";
-}
-
-.mi-11mp::before {
-  content: "\e953";
-}
-
-.mi-12mp::before {
-  content: "\e954";
-}
-
-.mi-13mp::before {
-  content: "\e955";
-}
-
-.mi-14mp::before {
-  content: "\e956";
-}
-
-.mi-15mp::before {
-  content: "\e957";
-}
-
-.mi-16mp::before {
-  content: "\e958";
-}
-
-.mi-17mp::before {
-  content: "\e959";
-}
-
-.mi-18-up-rating::before {
-  content: "\f8fd";
-}
-
-.mi-18mp::before {
-  content: "\e95a";
-}
-
-.mi-19mp::before {
-  content: "\e95b";
-}
-
-.mi-1k::before {
-  content: "\e95c";
-}
-
-.mi-1k-plus::before {
-  content: "\e95d";
-}
-
-.mi-1x-mobiledata::before {
-  content: "\efcd";
-}
-
-.mi-20mp::before {
-  content: "\e95e";
-}
-
-.mi-21mp::before {
-  content: "\e95f";
+}e95f";
 }
 
 .mi-22mp::before {
