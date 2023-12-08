@@ -69,7 +69,6 @@ a.link {
 }
 
 .section-gradient {
-  
   min-height: 100vh;
   background: var(
     --gradient-supersoft,
@@ -133,6 +132,7 @@ a.link {
   grid-template-areas: "info" "logo" "nav";
   color: $white;
   row-gap: 18px;
+  column-gap: 15px;
   @media screen and (min-width: $md) {
     grid-template-areas: "logo info" "logo nav";
   }
@@ -194,10 +194,9 @@ a.link {
     font-size: 30px;
   }
   &:hover {
-    color:$accent;
+    color: $accent;
     border: 1px solid $accent;
   }
-
 }
 .btn-link-decoration-none {
   text-decoration: none;
@@ -245,7 +244,7 @@ a.link {
   color: $active-regular;
   &:hover,
   &:hover span {
-    color: #f0145a;
+    color: $accent;
   }
 }
 
@@ -359,6 +358,9 @@ a.link {
     color: $basic-black;
     line-height: 22px;
   }
+  &__link {
+    text-decoration: none;
+  }
 }
 .txt-wrap.publications-row__txt {
   padding: 30px;
@@ -462,24 +464,58 @@ a.link {
 .flex-wrap {
   flex-wrap: wrap;
 }
-.footer-first-row.d-flex {
-  justify-content: space-between;
-}
+
 @media screen and (max-width: $md) {
-  .container-lg.flex-footer-container {
+  /*.container-lg.flex-footer-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     align-content: center;
     flex-wrap: wrap;
     
-  }
+  }*/
+
   .footer-first-row.d-flex {
     justify-content: center;
   }
+  .footer-contacts {
+    justify-content: center;
+    margin-bottom: 30px;
   }
+  .footer-copyright {
+    text-align: center;
+  }
+  .footer-first-row.footer-grid__address {
+    margin-bottom: 21px;
+  }
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-areas: "address" "contacts" "copyright";
+  @media screen and (min-width: $md) {
+    grid-template-areas: "address copyright" "contacts contacts";
+    row-gap: 21px;
+  }
+  &__address {
+    grid-area: address;
+  }
+  &__copyright {
+    grid-area: copyright;
+  }
+  &__contacts {
+    grid-area: contacts;
+  }
+}
+@media screen and (min-width: $md) {
+    .footer-copyright {
+        text-align: right;
+    }
+   
+}
 
 /* change container paddings*/
+
 @media screen and (max-width: $lg) {
   .container-lg.container-no-padings {
     padding: 0;
@@ -491,23 +527,18 @@ a.link {
 
 .container-lg.container-paddings {
   padding: 0 30px;
-  
+
   @media screen and (min-width: $md) {
     padding: 0 60px;
-    
   }
-
 }
 .carousel-inner.carousel-inner-container {
   padding: 30px 30px 0 30px;
-  
+
   @media screen and (min-width: $md) {
     padding: 0 60px;
-    
   }
 }
-
-
 
 /*Services page*/
 .navbar-brand-link.services-logo {
@@ -518,21 +549,19 @@ a.link {
 }
 .services-page-logo {
   display: flex;
-  align-items:start
+  align-items: start;
 }
 
 /*Service entry page*/
 .section-gradient_mb-60 {
   margin-bottom: 80px;
 }
-
 .divider_grey {
   width: 100%;
   height: 4px;
-  background-color: #FFFFFF80;
+  background-color: #ffffff80;
   margin-bottom: 30px;
 }
-
 .row-mb_60.row {
   padding-bottom: 60px;
 }
@@ -552,20 +581,20 @@ a.link {
   line-height: 19.5px;
   font-weight: 700;
   cursor: pointer;
-  box-shadow: 0px 0px 20px 0px #24A3FF80;
+  box-shadow: 0px 0px 20px 0px #24a3ff80;
   &:hover {
     color: $accent;
   }
 }
 p.service-description {
-  font-size:19px;
+  font-size: 19px;
   line-height: 30px;
   font-weight: 400;
 }
 .h3.fs-22px {
   font-size: 22px;
 }
-.row-list{
+.row-list {
   display: flex;
   flex-direction: column;
   gap: 15px;
